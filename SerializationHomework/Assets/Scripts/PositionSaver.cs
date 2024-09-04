@@ -9,7 +9,7 @@ namespace DefaultNamespace
     [System.Serializable]
     public class PositionSaver : MonoBehaviour
 	{
-		[Serializable]        
+		[System.Serializable]        
         public struct Data
 		{
 			public Vector3 Position;
