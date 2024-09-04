@@ -6,8 +6,10 @@ namespace DefaultNamespace
 	[RequireComponent(typeof(PositionSaver))]
 	public class EditorMover : MonoBehaviour
 	{
+		[SerializeField]
 		private PositionSaver _save;
-		private float _currentDelay;
+        [SerializeField]
+        private float _currentDelay;
 
         //todo comment: Что произойдёт, если _delay > _duration?
         //в проверке в методе Update _currentDelay не достигнет нужного значения и не произведется запись в Records 

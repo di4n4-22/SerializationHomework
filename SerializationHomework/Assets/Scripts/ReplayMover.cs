@@ -6,10 +6,12 @@ namespace DefaultNamespace
 	[RequireComponent(typeof(PositionSaver))]
 	public class ReplayMover : MonoBehaviour
 	{
+		[SerializeField]
 		private PositionSaver _save;
 
 		private int _index;
-		private PositionSaver.Data _prev;
+        [SerializeField]
+        private PositionSaver.Data _prev;
 		private float _duration;
 
 		private void Start()
